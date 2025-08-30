@@ -1,0 +1,113 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 48 100% 98%;
+    --foreground: 120 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 120 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 10% 15%;
+
+    --primary: 120 61% 50%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 27 45% 88%;
+    --secondary-foreground: 30 25% 20%;
+
+    --muted: 45 25% 95%;
+    --muted-foreground: 120 5% 45%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 25% 90%;
+    --input: 45 25% 90%;
+    --ring: 120 61% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 48 100% 97%;
+    --sidebar-foreground: 120 10% 25%;
+    --sidebar-primary: 120 61% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 45 25% 92%;
+    --sidebar-accent-foreground: 120 10% 25%;
+    --sidebar-border: 45 25% 88%;
+    --sidebar-ring: 120 61% 50%;
+  }
+
+  .dark {
+    --background: 120 15% 8%;
+    --foreground: 48 100% 95%;
+
+    --card: 120 15% 10%;
+    --card-foreground: 48 100% 95%;
+
+    --popover: 120 15% 10%;
+    --popover-foreground: 48 100% 95%;
+
+    --primary: 120 61% 45%;
+    --primary-foreground: 120 15% 8%;
+
+    --secondary: 30 15% 15%;
+    --secondary-foreground: 48 100% 95%;
+
+    --muted: 120 10% 15%;
+    --muted-foreground: 48 25% 65%;
+
+    --accent: 25 95% 48%;
+    --accent-foreground: 120 15% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 120 10% 18%;
+    --input: 120 10% 18%;
+    --ring: 120 61% 45%;
+
+    --sidebar-background: 120 15% 8%;
+    --sidebar-foreground: 48 100% 90%;
+    --sidebar-primary: 120 61% 45%;
+    --sidebar-primary-foreground: 120 15% 8%;
+    --sidebar-accent: 120 10% 12%;
+    --sidebar-accent-foreground: 48 100% 90%;
+    --sidebar-border: 120 10% 15%;
+    --sidebar-ring: 120 61% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom agricultural gradients */
+.agri-gradient {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+.agri-earth-gradient {
+  background: linear-gradient(135deg, #bfa094 0%, #a18072 100%);
+}
+
+.agri-sunset-gradient {
+  background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
+}
